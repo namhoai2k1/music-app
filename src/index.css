@@ -1,13 +1,105 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto+Mono&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    background: #fafafa;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.App {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.c-player {
+    display: block;
+    background-color: #313131;
+    padding: 50px;
+    border-radius: 16px;
+    box-shadow: inset -6px -6px 12px rgba(0, 0, 0, 0.8),
+        inset 6px 6px 12px rgba(255, 255, 255, 0.4);
+}
+
+.c-player h4 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.c-player p {
+    color: #aaa;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.c-player--details .details-img {
+    position: relative;
+    width: fit-content;
+    margin: 50px auto;
+}
+
+.details-img img {
+    width: 100%;
+    display: block;
+    max-width: 250px;
+    border-radius: 50%;
+    border: 5px dotted rgb(251, 255, 0);
+}
+
+.details-title {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.c-player--details .details-artist {
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+    font-weight: 600;
+    color: #aaa;
+}
+
+.c-player--controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.c-player--controls .play-btn {
+    display: flex;
+    margin: 0 30px;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8),
+        -4px -4px 10px rgba(255, 255, 255, 0.4),
+        inset -4px -4px 10px rgba(0, 0, 0, 0.4),
+        inset 4px -4px 10px rgba(255, 255, 255, 0.4);
+    border: 0;
+    outline: none;
+    background-color: #ebcb3d;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.c-player--controls .skip-btn {
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    color: #fff;
+    font-size: 1.5rem;
 }
